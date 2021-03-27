@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <div class="header__bg">
+            <div class="container-fluid container-xxxl h-100 ">
+                <div class="row h-100 justify-content-end">
+                    <div class="col-3 position-relative">
+                        <div class="header__right-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container-fluid container-xxxl ">
+                <div class="row justify-content-between align-items-center">
+
+
+                    <a href="" class="nav__logo">
+                        expice
+                    </a>
+                    <a class="nav__burger-menu">
+                        <span class="nav__burger-line"></span>
+                        <span class="nav__burger-line"></span>
+                        <span class="nav__burger-line"></span>
+                    </a>
+                    <div class="header__side-bar ">
+                        <div class="side-bar__content">
+                            <ul class="nav__menu-list ">
+                                <li class="nav__menu-item"><a href="#!" class="nav__menu-link">menu one </a></li>
+                                <li class="nav__menu-item"><a href="#!" class="nav__menu-link">menu two</a></li>
+                                <li class="nav__menu-item"><a href="#!" class="nav__menu-link">menu three </a></li>
+                                <li class="nav__menu-item"><a href="#!" class="nav__menu-link">menu four</a></li>
+                            </ul>
+
+                            <div class="nav__user-profile d-flex align-items-center ">
+                                <div class="nav__user-pic d-flex justify-content-center align-items-center">
+                                    <span class="nav__user-icon "><img src="./images/user-icon.png" alt=""></span>
+                                    <span class="nav__user-online"></span>
+                                </div>
+                                <div class="nav__user-dropdown position-relative">
+                                    <p class="nav__user-name">user <span class="nav__user-name_vector"><i
+                                                class="fas fa-chevron-down"></i></span></p>
+                                    <div class="nav__user-dropdown_content ">
+                                        <label class="switch">
+                                            <input class="switch-input" type="checkbox">
+                                            <span class="switcher round"></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <span class="side-bar__close">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header__content">
+
+            <div class="container-fluid container-xxxl">
+                <div class="row position-relative">
+                    <div class="col-9 col-lg-6 position-relative">
+                        <div class="header__content-info   d-flex justify-content-center flex-column">
+                            <h1 class="header__content-title">food</h1>
+                            <p class="header__content-desc"> Discover Restaurant &&nbsp;Delicious Food</p>
+                            <form class="header__content-search position-relative">
+                                <input type="text" name="search" class="header__content-input"
+                                    placeholder="search restaurant, food">
+                                <button class="header__content-btn" type="submit">go</button>
+                            </form> 
+                        </div>
+                        <div class="header__search-location1">
+                            <span class="header__search-location_icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <p class="header__location-name">Rajshahi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+
+                        <div class="header__content-slider ">
+
+                            <div class="slider">
+
+                                <div class="conatiner position-absolute w-100 h-100 ">
+                                    <div class="row h-100">
+                                        <div class="col-9 col-lg-6 h-100">
+                                            <div class="d-flex align-items-start w-100 h-100 position-relative ">
+                                                <img src="./images/dots-bg.png" alt="" class="header__content-bg ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__line">
+                                    <div class="slider__slide">
+                                        <img src="images/plate.png" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__slide">
+                                        <img src="images/plate.png" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__slide">
+                                        <img src="images/plate.png" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__slide">
+                                        <img src="images/plate.png" alt="" class="slider__img">
+                                    </div>
+                                    <div class="slider__slide">
+                                        <img src="images/plate.png" alt="" class="slider__img">
+                                    </div>
+                                </div>
+                                <div class="slider__controls">
+                                    <button class=" slider__prev">
+                                        <span><i class="fal fa-long-arrow-left"></i></span>
+                                    </button>
+                                    <button class=" slider__next"> <span><i class="fal fa-long-arrow-right"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="header__search-location2">
+            <span class="header__search-location_icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <p class="header__location-name">Rajshahi</p>
+        </div>
+    </header>
+    <main class="main">
+        <section class="food-item">
+            <div class="food-item__text d-flex">
+                <div class="container-fluid container-xxxl">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <h2 class="food-item__text-title title">
+                                some top restaurant for <br> dining in or Take away!
+                            </h2>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-5">
+                            <p class="food-item__text-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor
+                                eget
+                                sed
+                                phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt.
+                                Volutpat
+                                metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus.
+                                Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget
+                                sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item__content">
+                <div class="container-fluid p-0">
+                    <div class="row p-0  ">
+                        <div class="col-12 col-sm-6 col-md-5 col-xxl-4 ">
+                            <div class="food-item__content-card ">
+                                <img src="images/few-dots-bg.png" class="food-item__card-bg1" alt="">
+                                <img src="images/food-item-1.png" alt="" class="food-item__card-img">
+                                <div class="food-item__card-info">
+                                    <h3 class="food-item__card-title tilte">Fire Water</h3>
+                                    <p class="food-item__card-desc">we are all about we are all about to the fullest and
+                                        all content dining out or in!dining out or in!</p>
+                                    <p class="food-item__card-location"><span class="food-item__card-icon"> <i
+                                                class="fas fa-map-marker-alt"></i></span>New Market</p>
+                                    <a href="" class="food-item__card-link">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-5 col-xxl-4  ">
+                            <div class="food-item__content-card ">
+                                <img src="images/few-dots-bg.png" class="food-item__card-bg2" alt="">
+                                <img src="images/few-dots-bg.png" class="food-item__card-bg3" alt="">
+                                <img src="images/food-item-2.png" alt="" class="food-item__card-img">
+                                <div class="food-item__card-info">
+                                    <h3 class="food-item__card-title">The Wonton </h3>
+                                    <p class="food-item__card-desc">we are all about we are all about to the fullest and
+                                        all content dining out or in!dining out or in!</p>
+                                    <p class="food-item__card-location"><span class="food-item__card-icon"> <i
+                                                class="fas fa-map-marker-alt"></i></span>Saheb Bazar</p>
+                                    <a href="" class="food-item__card-link">Book Now </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 col-xl-2">
+                            <div class="food-item__link">
+                                <a href="#!" class="food-item__but"><span class="food-item__link-span"><i
+                                            class="fas fa-chevron-right"></i></span>
+                                    <p class="food-item__link-text">See More</p>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="booking">
+            
+           
+            <div class="container-fluid container-xxxl ">
+                <div class="row justify-content-center"> 
+                    <div class="col-2"><div class="booking__left-img"> <img src="images/booking-left.png" alt=""></div></div>
+                    <div class="col-8 col-w-12"> 
+                        <div class="booking__content-bg">
+                            <img class="booking__content-dots1" src="images/few-dots-bg.png" alt="">
+                            <img class="booking__content-dots2" src="images/few-dots-bg.png" alt="">
+                            <img class="booking__content-dots3" src="images/few-dots-bg.png" alt="">
+                            <div class="booking__content">
+                                <h2 class="booking__content-title title"> advance booking </h2>
+                                <form action="">
+                                    <div class="booking__content-search">
+                                        <input type="text" name="booking-search" class="booking__content-input"
+                                            placeholder="search restrurent">
+                                        <button class="booking__content-btn" type="submit" disabled>go</button>
+                                    </div>
+                                     
+                                        <ul class="booking__content-post">
+                                            <li class="booking__content-item">
+                                                <label class="booking__content-label">Date <span
+                                                        class="booking__content-icon"><i
+                                                            class="fas fa-sort-down"></i></span>
+                                                    <input type="date" name="date" class="booking__input-date">
+                                                </label>
+                                                <span class="booking__content-date"></span>
+                                            </li>
+                                            <li class="booking__content-item">
+                                                <label class="booking__content-label"> Time
+                                                    <span class="booking__content-icon"><i
+                                                            class="fas fa-sort-down"></i></span>
+                                                    <input type="time" name="time" class="booking__input-time">
+                                                </label>
+                                                <span class="booking__content-time"></span>
+                                            </li>
+                                            <li class="booking__content-item">
+                                                <label class="booking__content-label label-guests"> Guests
+                                                    <span class="booking__content-icon"><i
+                                                            class="fas fa-sort-down"></i></span>
+                                                    <input type="number" id="numb" name="number" class="booking__input-guests"
+                                                        max="100" min="1"></label>
+                                                <label for="numb" class="booking__content-guests">0 People</label>
+                                            </li>
+                                        </ul> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"> <div class="booking__right-img"> <img src="images/booking-right.png" alt=""></div>  </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="service">
+            <div class="service__text">
+                <div class="container-fluid container-xxxl">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-xl-4">
+                            <h2 class="service__text-title title">
+                                Our Services
+                            </h2>
+                        </div>
+                        <div class="col-12 col-lg-7 col-xl-8 col-xl-5">
+                            <p class="service__text-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor
+                                eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a,
+                                tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus
+                                ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+                                adipiscing cursus auctor eget sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__content">
+                <div class="container-fluid container-xxxl">
+                    <div class="service__content-grid">
+                        <div class="service__content-item">
+                            <div class="service__content-icon">
+                                <i class="svg-people"></i>
+                            </div>
+                        </div>
+                        <div class="service__content-item ">
+                            <h3 class="service__content-title ">advanced table <span>booking</span> <span
+                                    class="service__arrow1">&lt;</span> </h3>
+                            <p class="service__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                        <div class="service__content-item align-items-start">
+                            <h3 class="service__content-title ">Food For Free
+                                <span>24/7</span> <span class="service__arrow2"> &gt;</span> </h3>
+                            <p class="service__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                        <div class="service__content-item">
+                            <div class="service__content-icon">
+                                <i class="svg-appliances"></i>
+                            </div>
+                        </div>
+                        <div class="service__content-item">
+                            <i class="svg-delivery"></i>
+                            <h3 class="service__content-title">free home delivery
+
+                                <span>at your door steps</span> </h3>
+                            <p class="service__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="products__text">
+                <div class="container-fluid container-xxxl">
+                    <div class="row justify-content-center ">
+                        <div class="col-12  col-lg-7 col-xl-5">
+                            <h2 class="products__text-title text-center title">Explore Our Foods</h2>
+                            <p class="products__text-desc text-center">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+                                donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__content">
+                <div class="container-fluid container-xxxl">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-1.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-2.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-3.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-4.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-5.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="products__content-card">
+                                <div class="products__content-img">
+                                    <img src="images/product-6.png" alt="">
+                                </div>
+                                <a href="#!" class="products__content-info">
+                                    <h3 class="products__content-title">Hand Sandwich <span
+                                            class="products__content-price">$10.25</span></h3>
+                                    <p class="products__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Est, adipiscing. </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app">
+            <div class="container-fluid container-xxxl">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-sm-10 col-md-8  col-lg-6 col-xxl-5">
+                        <div class="app__info">
+                            <h2 class="app__info-title title">Download app for Exciting Deals</h2>
+                            <p class="app__info-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+                                adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum
+                                tristique leo bibendum in a, tincidunt. </p>
+                            <div class="app__info-download d-flex">
+                                <a href="http://play.google.com" class="app__info-link"><i
+                                        class="fab fa-google-play"></i>
+                                    <p class="app__link-info">gET IT ON <span class="app__link-address">google
+                                            Play</span> </p>
+                                </a>
+                                <a href="https://www.apple.com/ru/app-store/" class="app__info-link">
+                                    <i class="fab fa-apple"></i>
+                                    <p class="app__link-info">Download on the <span class="app__link-address">App
+                                            Store</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xxl-7">
+                        <div
+                            class="app__picture position-relative d-flex justify-content-center align-items-start justify-content-lg-end align-items-lg-center">
+                            <img src="images/phone.png" alt="" class="app__picture-img">
+                            <img src="images/phone-bg.png" alt="" class="app__picture-img">
+                            <div class="app__picture-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid container-xxxl h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="footer__content ">
+                    <h2 class="footer__title"><span class="d-block ">Get notified
+                        </span>about new amazing products</h2>
+                    <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+                        adipiscing
+                        cursus auctor eget sed phasellus senectus. </p>
+
+                    <form action="" class="footer__form position-relative">
+                        <input type="text" name="email" placeholder="E-mail" class="footer__input">
+                        <button class="footer__form-btn" type="submit"><span class="footer__form-icon"><i
+                                    class="fal fa-long-arrow-right"></i></span></button>
+                    </form>
+
+                    <ul class="footer__list d-flex justify-content-around mb-0">
+                        <li class="footer__list-item"><a href="" class="footer__list-link">Product</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__list-link">Company</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__list-link">Learn more</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__list-link">Get in touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__social ">
+
+                <ul class="footer__social-list d-flex ">
+                    <li class="footer__social-item">
+                        <a href="https://www.facebook.com/" class="footer__social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://twitter.com/" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://ru.linkedin.com/" class="footer__social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.behance.net/" class="footer__social-link"><i
+                                class="fab fa-behance"></i></a>
+                    </li>
+                </ul>
+                <p class="footer__copyright"><i class="fal fa-copyright"></i>2020 Expice Studio</p>
+            </div>
+
+
+
+        </div>
+        <img src="images/footer-plant.png" alt="" class="footer__plant">
+        <img src="images/footer-dots.png" alt="" class="footer__dots">
+    </footer>
+    <div class="picture__view">
+        <div class="picture__view-content">
+            <img alt="" class="picture__view-img">
+        </div>
+    </div>
+    <a href="#header" class="btn__up"><i class="fas fa-chevron-up"></i></a>
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>
+
