@@ -133,13 +133,13 @@ class SLIDER {
             }, false)
             sl.addEventListener('touchmove', (e) => {
                 this.moveX = e.touches[0].clientX;
-                this.moveY = e.touches[0].clientY;
+                this.moveY = e.touches[0].clientY; 
                 this.swipe()
             }, false)
             sl.addEventListener('mousemove', (e) => {
                 this.moveX = e.clientX;
                 this.moveY = e.clientY;
-                this.swipe()
+                this.swipe() 
             }, false)
             sl.addEventListener('touchend', () => {
                 this.endTouch()
@@ -384,8 +384,8 @@ window.addEventListener('resize', () => {
   
 
 window.addEventListener('scroll', () => {
-    if (pageYOffset > head.clientHeight) { 
-        console.log(btnUp);
+     
+    if (pageYOffset > head.clientHeight) {  
         btnUp.style.display = 'flex';
     } else {
         btnUp.style.display = 'none';

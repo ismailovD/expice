@@ -557,7 +557,7 @@ input:checked+.switcher:before {
     line-height: 24px;
     text-transform: capitalize;
     padding-top: 10px;
-    width: 85%;
+    width: 100%;
 }
 
 .food-item__content {
@@ -1310,18 +1310,19 @@ input:checked+.switcher:before {
     text-transform: capitalize;
     font-family: var(--f500);
     font-size: 14px;
+    width: 100%;
 }
 
-.app__picture-img:nth-child(1) {
+.app__picture-img{
     position: relative;
     z-index: 2;
 }
 
-.app__picture-img:nth-child(2) {
+.app__picture-img2 {
     position: absolute;
     right: 0;
-    top: 20%;
-    z-index: 1;
+    top: 10%;
+    z-index: 1; 
     transform: scale(0.7);
 }
 
@@ -1549,7 +1550,7 @@ input:checked+.switcher:before {
     right: 50px;
     bottom: 50px;
     color: var(--white); 
-    z-index: 20;
+    z-index: 3;
 } 
 
 .btn__up:hover {
@@ -1745,13 +1746,13 @@ input:checked+.switcher:before {
         padding-top: 50px;
     }
 
-    .app__picture-img:nth-child(1) {
+    .app__picture-img {
         position: relative;
         z-index: 2;
         transform: scale(0.7) translateX(100px);
     }
 
-    .app__picture-img:nth-child(2) {
+    .app__picture-img2 {
         position: absolute;
         right: -120px;
         top: 15%;
@@ -1970,10 +1971,9 @@ input:checked+.switcher:before {
     }
 
     .title {
-        font-size: 44px;
-        line-height: 60px;
+        font-size: 34px;
+        line-height: 50px;
     }
-
 
 
     .service__arrow1 {
@@ -2146,12 +2146,12 @@ input:checked+.switcher:before {
         margin-top: 50px;
     }
 
-    .app__picture-img:nth-child(1) {
+    .app__picture-img  {
         transform: translateX(0px);
         max-width: 60%;
     }
 
-    .app__picture-img:nth-child(2) {
+    .app__picture-img2 {
         right: 50%;
         top: 0%;
         width: 75%;
@@ -2469,8 +2469,8 @@ input:checked+.switcher:before {
 
 @media(max-width:554px) {
     .title {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 28px;
+        line-height: 44px;
     }
 
     .nav__logo {
@@ -2502,10 +2502,7 @@ input:checked+.switcher:before {
         padding: 18px 0 18px 20px;
     }
 
-    .food-item__text-title {
-        padding-left: 30px;
-    }
-
+     
     .food-item__text-title::before {
         width: 12px;
     }
@@ -2787,9 +2784,7 @@ input:checked+.switcher:before {
         height: 425px;
     }
 
-    .header__content-desc {
-        font-size: 25px;
-    }
+     
 
     .header__content-title {
         font-size: 110px;
@@ -2803,7 +2798,7 @@ input:checked+.switcher:before {
     }
 
     .header__content-desc {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 25px;
     }
 
