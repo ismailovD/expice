@@ -1871,10 +1871,7 @@ input:checked+.switcher:before {
         height: 600px;
     }
 
-    /* .booking__left-img img {
-        width: 50vw;
-        right: -350%;
-    } */
+     
     .food-item__card-info {
         padding: 21px 10px 20px 30px;
     }
